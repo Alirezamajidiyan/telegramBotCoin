@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        function setThemeClass() {
+            document.documentElement.className = Telegram.WebApp.colorScheme;
+        }
+
+        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+        setThemeClass();
+
+    </script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    <title>My Coin</title>
+</head>
+<body>
+    <div class="box">
+        <div class="about">
+            <a href="https://github.com/Alirezamajidiyan"><button class="btn">About me 😎</button></a>
+        </div>
+        <div class="price">
+            <p class="counter" id="counter">0</p>
+        </div>
+        <img src="./assets/coin3.png" alt="coin-image" class="coin" id="coin" draggable="false" >
+
+        <div class="parent">
+            <div class="enrgy">500</div>
+        </div>
+    </div>
+    <div class="updatePanel glass">
+        <i id="updateButton" class="icon">♻
+            <span id="updateLevel">0</span>
+        </i>
+        <i id="rocketButton" class="icon">🚀
+            <span id="rocketUses">3</span>
+        </i>
+        <i id="energyButton" class="icon">⚡
+            <span id="energyUses">3</span>
+        </i>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
