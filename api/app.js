@@ -68,7 +68,7 @@ bot.onText(/\/start/, (msg) => {
           [
             {
               text: "🎮 شروع بازی",
-              url: "https://your-web-app-url.com", // آدرس وب‌اپلیکیشن شما
+              url: "https://maj-coin.tiiny.site/", // آدرس وب‌اپلیکیشن شما
             },
           ],
           [{ text: "🔗 دریافت لینک دعوت", callback_data: "get_invite_link" }],
